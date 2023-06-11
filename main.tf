@@ -51,7 +51,7 @@ resource "aws_key_pair" "ec2_key" {
 resource "aws_instance" "ec2" {
   ami = var.ec2_ami
   instance_type = var.instance_type
-  subnet_id = var.subnet_cidr
+  subnet_id = aws_subnet.private.id
   key_name = aws_key_pair.ec2_key.public_key
 
   root_block_device {
