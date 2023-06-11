@@ -63,7 +63,7 @@ resource "aws_instance" "ec2" {
     Name ="EC2"
   }
   count = 2
-  depends_on = [ aws_security_group.ec2_sg ]
+  depends_on = [ aws_security_group.ec2_sg, aws_key_pair.ec2_key ]
 }
 
 # S3 bucket
