@@ -18,7 +18,8 @@
 ### Terraform files plan (main.tf, provider.tf, variables.tf) 
 ### and NOT use different files for each Terraform module (VPC, Subnet, SecurityGroup, EC2_Instance, S3_bucket)
 ### to prevent files from missing during the archiving and copying or due to any other data corruption.
-### 3. Terraform files + README.md (this file) was committed to the Main (single) branch
+### 3. Terraform files + README.md (this file) were committed to the Main (single) branch
+## https://github.com/boudtech/intuitive-cloud
 ### to prevent any other branch merge and pull-request occasional mixing.
 ##
 ## !!! IMPORTANT !!!
